@@ -4,6 +4,7 @@
 #include "Framework/Input.h"
 #include "Framework/Collision.h"
 #include "Ball.h"
+#include "Paddle.h"
 #include <string>
 #include <iostream>
 
@@ -32,7 +33,10 @@ private:
 
 	Ball ball_1_AABB_;
 	Ball ball_2_AABB_;
-	sf::RectangleShape boll_1_AABB_collision_box_;
-	sf::RectangleShape boll_2_AABB_collision_box_;
 	sf::Texture ball_texture_;
+
+	Ball pong_;
+	Paddle left_paddle_;
+	Paddle right_paddle_;
+
 };
